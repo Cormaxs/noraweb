@@ -1,0 +1,168 @@
+header{
+background: var(--blancoPuro);
+padding-top: 30px;
+}
+ a{
+    text-decoration: none;
+    color: var(--blancoPuro);
+}
+.antMenu{
+    max-width: 1147px;
+    width: 90%;
+    min-height: 90.88px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px 1rem 5px;
+    
+}
+.antMenu > a{
+    margin: auto;
+}
+.logo{
+    width: 230px;
+    height: auto;
+    min-width: 160px;
+    margin: auto;
+   
+}
+.ContainerBuscador{
+width: 59%;
+min-width: 20%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 1rem;
+flex-grow: 2;
+}
+.ContainerBuscador > input{
+    width: 100%;
+    height: 44px;
+    background: var(--grisBuscar);
+    border: solid 1px var(--grisBuscarBorde);
+    outline: none;
+    padding: 0 0 0 1rem ;
+    flex-grow: 2;
+}
+.ContainerBuscador > button{
+    width: 42px;
+    height: 44px;
+    background: var(--grisBuscar);
+    border: solid 1px var(--grisBuscarBorde);
+    outline: none;
+    margin-left: -5px;
+}
+.ContainerBuscador > button svg{
+    width: 42px;
+    height: 24px;
+    fill: var(--grisLetra);
+}
+
+.user{
+    background: var(--negro);
+    height: 40px;
+    width: 104.04px;
+    border-radius: 10px;
+    color: var(--blancoPuro);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.user > span::before{
+    content: "\2605";/*\f110*/
+    margin-right: 8px;
+    width: 15px;
+    height: 15px;
+}
+.user > span{
+font-size: 11px;
+}
+
+
+.containerMenu{
+    height: 58px;
+    background: var(--grisMenu);
+  
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    max-width:1147px ;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+.menu > ol{
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    flex-grow: 2;
+    align-items: center;
+}
+.menu > ol li{
+    display: flex;
+    align-items: center;
+padding: 0 10px;
+height: 100%;
+
+}
+
+.menu > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   list-style-type: none;
+   height: 100%;
+   min-width: 120.48px;
+   background: var(--verdeBtn);
+}
+
+.colorMayorista{
+    background: var(--azulCartel);
+}
+
+.home::before{
+    content: "\f015";
+}
+
+.ofertas::before
+{
+    content: "\f488";
+    padding-right: 5px;
+}
+.serMayorista::before{
+    content: "\f488";
+    padding-right: 5px;
+}
+.carrito{
+    font-weight: bold;
+}
+.carrito::before{
+content: "\f488";
+padding-right: 5px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    .menu, .containerMenu{
+       display: none;
+    }
+    .antMenu > .user{
+        display: none;
+    }
+
+.antMenu{
+    flex-wrap: wrap;
+    gap: .5rem;
+ 
+}
+  }

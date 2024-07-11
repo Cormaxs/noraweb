@@ -1,0 +1,79 @@
+.containerMostrarProducto{
+    min-height: 1000px;
+    margin: 3rem auto;
+    border-radius: 10px;
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--blancoPuro);
+    
+}
+
+.containerImagenProducto{
+flex-grow: 2;
+    width: 40%;
+    overflow: hidden;
+}
+#imagenMostrar{
+  width: 100%;
+  object-fit: contain;
+
+}
+#imagenMostrar:hover{
+    transform: scale(2);
+}
+
+
+.containerInformacionProducto{
+    flex-grow: 2; 
+    width: 40%;
+    border: solid 1px var(--grisBuscarBorde);
+    padding: 1rem;
+}
+.nombreH2{
+    font-weight: bold;
+    text-align: left;
+    border-bottom: solid 1px var(--grisBuscarBorde);
+    padding-bottom: 1.5rem;
+}
+
+.precios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.Preciorebaja{
+    text-decoration: line-through;
+    color: var(--grisTachar);
+    font-size: 19px;
+}
+.Precioactual{
+    margin-top: .5rem;
+    margin-left: -20px;
+    color: var(--grisLetra);
+    font-size: 30px;
+}
+.ahorras{
+    border-top: solid 1px var(--grisBuscarBorde);
+    color: #000000;
+    text-align: left;
+    font-size: 12px;
+    padding: .2rem;
+}
+.ahorras > span{
+    color: red;
+}
+
+@media screen and (max-width:680px) {
+    .containerMostrarProducto{
+        flex-direction: column;
+    }
+    .containerInformacionProducto{
+        width: 100%;
+    }
+    .containerImagenProducto{
+        width: 100%;
+    }
+}
